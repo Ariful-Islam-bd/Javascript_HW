@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS 31 May HW</title>
+<style>
+.heads{
+  text-align: center;
+  color: white;
+  background-color: black;
+  width: 400px;
+  border-radius:50px;
+}
+.coding{
+  background-color: Gainsboro; <!-- Cornsilk; -->
+}
+</style>
+</head>
+<body>
+ 
+  <h1 class="heads">Javascript&nbsp;Home&nbsp;Work<br>And&nbsp;Solutions</h1>
+  <p>Q.1<br> Write a program which logs/prints your fullname.<p>
+<article class="coding">
+  <pre>Solution:
+  Here are codes: 
+  <code>
+  &lt;script&gt;
+     document.write("&lt;h1&gt;Md. Ariful Islam&lt;/h1&gt;");
+     console.log("&lt;h1&gt;Md. Ariful Islam&lt;/h1&gt;");
+  &lt;/script&gt;
+  </code>
+  </pre>
+</article>
+    Outputs:<br>
+  
+    <script>
+      document.write("<h1>Md. Ariful Islam</h1>");
+      console.log("<h1>Md. Ariful Islam</h1>");
+    </script>
+  <hr>
+
+  <p>Q.2<br> Given two number n=110, s=101. Print in console the addition, subtraction, multiplication and division of these numbers.</p>
+
+<article class="coding">
+  <pre>Solution:
+  Here are codes: 
+  <code>
+    &lt;script&gt;
+      var n = 110;
+      var s = 101;
+
+      var ad = n + s;
+      console.log(ad); // for addition
+
+      var sb = n - s;
+      console.log(sb); // for subtraction
+
+      var mp = n * s;
+      console.log(mp); // for multiplication
+
+      var dv = n / s;
+      console.log(dv); // for division
+    &lt;/script&gt;
+  </code>
+  </pre>
+</article>
+    Outputs:<br>
+  
+    <script>
+      var n = 110;
+      var s = 101;
+
+      var ad = n + s;
+      document.write("n + s = " + ad + "<br>"); // for addition
+
+      var sb = n - s;
+      document.write("n - s = " + sb + "<br>"); // for subtraction
+
+      var mp = n * s;
+      document.write("n * s = " + mp + "<br>"); // for multiplication
+
+      var dv = n / s;
+      document.write("n / s = " + dv + "<br>"); // for division
+    </script>
+  <hr>
+
+  <p>Q.3<br> Write a code to find the area of a circle, radius r is given.</p>
+<article class="coding">
+  <pre>Solution:
+  Here are codes: 
+  <code>
+    &lt;script&gt;
+    var r = 5;
+    const pi = 3.1415;
+    var area = pi * r**2;
+
+      document.write("Radius of a Circle is: " + r + "&lt;br&gt;");
+      document.write("Area of the Circle is: " + area + "&lt;br&gt;");
+    &lt;/script&gt;
+  </code>
+  </pre>
+</article>
+    Outputs:<br>
+  
+    <script>
+    var r = 5;
+    const pi = 3.1415;
+    var area = pi * r**2;
+      document.write("Radius of a Circle is: " + r + "<br>");
+      document.write("Area of the Circle is: " + area + "<br>");
+    </script>
+  <hr>
+
+  <p>Q.4<br> Write a program to check whether a given number is within 50 to 100 or 200 to 400.  If not print "not in range".</p>
+<article class="coding">
+  <pre>Solution:
+  Here are codes: 
+  <code>
+    &lt;script&gt;
+    var a = 85;
+    var b = 507;
+    document.write("a = 85 &lt;br&gt; b = 507 &lt;br&gt;");
+    if (a >= 50 && a <= 100) {
+      document.write(a + " is within 50 to 100. &lt;br&gt;");
+     }
+    else if(a >= 200 && a <= 400){
+      document.write(a + " is within 200 to 400. &lt;br&gt;");
+     }
+    else{
+      document.write(a + " is not in range. &lt;br&gt;");
+}
+    if (b >= 50 && b <= 100) {
+      document.write(b + " is within 50 to 100. &lt;br&gt;");
+     }
+    else if(b >= 200 && b <= 400){
+      document.write(b + " is within 200 to 400. &lt;br&gt;");
+     }
+    else{
+      document.write(b + " is not in range. &lt;br&gt;");
+}
+    &lt;/script&gt;
+
+  </code>
+  </pre>
+</article>
+    Outputs:<br>
+  
+    <script>
+    var a = 85;
+    var b = 507;
+    document.write("a = 85 <br> b = 507 <br>");
+    if (a >= 50 && a <= 100) {
+      document.write(a + " is within 50 to 100. <br>");
+     }
+    else if(a >= 200 && a <= 400){
+      document.write(a + " is within 200 to 400. <br>");
+     }
+    else{
+      document.write(a + " is not in range. <br>");
+}
+    if (b >= 50 && b <= 100) {
+      document.write(b + " is within 50 to 100. <br>");
+     }
+    else if(b >= 200 && b <= 400){
+      document.write(b + " is within 200 to 400. <br>");
+     }
+    else{
+      document.write(b + " is not in range. <br>");
+}
+    </script>
+
+  <hr>
+
+  <p>Q.5<br> Use ternary operator to find 404 is even or odd.</p>
+<article class="coding">
+  <pre>Solution:
+  Here are codes: 
+  <code>
+  &lt;script&gt;
+     var given = 404;
+     document.write("Given number is : " + given + "&lt;br&gt;");
+     var evenodd = (given % 2 == 0) ? "Yes! It is even." : "No! It is odd."; 
+
+      document.write(evenodd);
+  &lt;/script&gt;
+  </code>
+  </pre>
+</article>
+    Outputs:<br>
+  
+    <script>
+     var given = 404;
+     document.write("Given number is : " + given + "<br>");
+     var evenodd = (given % 2 == 0) ? "Yes! It is even." : "No! It is odd."; 
+
+      document.write(evenodd);
+    </script>
+  <hr>
+
+  <p>Q.6<br> Write a program which prints the multiplication table of 5.</p>
+<article class="coding">
+  <pre>Solution:
+  Here are codes: 
+  <code>
+  &lt;script&gt;
+     var x = 5;
+     document.write("Given number is : " + x + "&lt;br&gt;");
+     for(i=1; i<=10; i++){
+      document.write(x + " * " + i + " = " + x * i + "&lt;br&gt;");
+     }
+  &lt;/script&gt;
+  </code>
+  </pre>
+</article>
+    Outputs:<br>
+  
+    <script>
+     var x = 5;
+     document.write("Given number is : " + x + "<br>");
+     for(i=1; i<=10; i++){
+      document.write(x + " * " + i + " = " + x * i + "<br>");
+     }
+    </script>
+  <hr>
+
+  <p>Q.7<br> Write a JavaScript program to check whether a given positive number is a multiple of 3 or a multiple of 7</p>
+<article class="coding">
+  <pre>Solution:
+  Here are codes: 
+  <code>
+  &lt;script&gt;
+     var x = 505;
+     document.write("Given number is : " + x + "&lt;br&gt;");
+     if(x % 3 == 0){
+      document.write(x + " is a multiple of 3." + "&lt;br&gt;");
+     }
+     else document.write(x + " is not a multiple of 3. &lt;br&gt;");
+     if(x % 7 == 0){
+      document.write(x + " is a multiple of 7." + "&lt;br&gt;");
+     }
+     else document.write(x + " is not a multiple of 7. &lt;br&gt;");
+  &lt;/script&gt;
+  </code>
+  </pre>
+</article>
+    Outputs:<br>
+  
+    <script>
+     var x = 505;
+     document.write("Given number is : " + x + "<br>");
+     if(x % 3 == 0){
+      document.write(x + " is a multiple of 3." + "<br>");
+     }
+     else document.write(x + " is not a multiple of 3. <br>");
+     if(x % 7 == 0){
+      document.write(x + " is a multiple of 7." + "<br>");
+     }
+     else document.write(x + " is not a multiple of 7. <br>");
+    </script>
+</body>
+</html>
+
+
